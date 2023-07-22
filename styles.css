@@ -1,0 +1,24 @@
+html {
+  margin: 0;
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#benvenuto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
