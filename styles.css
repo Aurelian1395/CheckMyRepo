@@ -22,3 +22,11 @@ main {
   align-content: center;
   align-items: center;
 }
+
+#username{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

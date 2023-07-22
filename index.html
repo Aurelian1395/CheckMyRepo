@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CheckMyRepo</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheckMyRepo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="index.js"></script>
+
 </head>
+
 <body>
- <main>
-  <div id="benvenuto">
-    <h1>Benvenuto</h1>
-    <p>Nelle prossime schermate verrà chiesto di inserire username e nome repository del tuo progetto GitHub</p>
-    <button class="button">Procediamo! &#9755;</button>
-  </div>
- </main>
+  <main>
+    <div id="benvenuto">
+      <h1>Benvenuto</h1>
+      <p>Nelle prossime schermate verrà chiesto di inserire username e nome repository del tuo progetto GitHub</p>
+      <button class="button" onclick="change()">Procediamo! &#9755;</button>
+    </div>
+
+    <div style="display: none;" id="username">
+      <div><button>&#11013;</button>
+        <h1>Username</h1>
+        <button>&#10145;</button>
+      </div>
+      <div><input type="text" placeholder="Scrivi il tuo username di GitHub"></div>
+    </div>
+  </main>
 </body>
+
 </html>
