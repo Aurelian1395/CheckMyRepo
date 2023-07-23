@@ -12,19 +12,37 @@
 
 <body>
   <main>
-    <div id="benvenuto"  class="container"   >
+    <div id="benvenuto" class="container">
       <h1>Benvenuto</h1>
       <p>Nelle prossime schermate verrà chiesto di inserire username e nome repository del tuo progetto GitHub</p>
       <button class="button" onclick="change('benvenuto','username')">Procediamo! &#9755;</button>
     </div>
 
     <div id="username" class="container" style="display: none;">
-      <div id="oneLine"><button  class="leftRight" onclick="change('username', 'benvenuto')">&#11013;</button>
+      <div class="oneLine"> <button class="leftRight" onclick="change('username', 'benvenuto')">&#11013;</button>
         <h1 id="user">Username</h1>
-        <button class="leftRight">&#10145;</button>
+        <button class="leftRight" onclick="change('username', 'repository')">&#10145;</button>
       </div>
-      <div><input type="text"  placeholder="Scrivi il tuo username di GitHub" class="insert"></div>
+      <div><input type="text" placeholder="Scrivi il tuo username di GitHub" class="insert"></div>
     </div>
+
+    <div id="repository" class="container" style="display: none;">
+      <div class="oneLine"><button class="leftRight" onclick="change('repository', 'username')">&#11013;</button>
+        <h1 id="repo">Repository</h1>
+        <button class="leftRight" onclick="change('repository', 'controlPannel')">&#10145;</button>
+      </div>
+      <div><input type="text" placeholder="Scrivi il nome del Repository" class="insert"></div>
+    </div>
+
+    <div class="container" id="controlPannel" style="display: none;">
+      <div class="oneLine"><button class="leftRight" onclick="change('controlPannel', 'repository')">&#11013;</button>
+        <h1 id="control">Controllo dei Dati</h1>
+      </div>
+      <div class="container">
+        <input type="text" value="" placeholder="Username">
+        <input type="text" value="" placeholder="Repository">
+        <button id="send"  onclick="send()">Invia</button>
+      </div>
   </main>
 </body>
 
