@@ -1,12 +1,13 @@
-html {
+/*Reset CSS */
+html, body {
   margin: 0;
   height: 100%;
   font-family: "Nunito", sans-serif;
 }
-body {
-  margin: 0;
-  height: 100%;
-}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
 main {
   height: 100%;
   display: flex;
@@ -15,7 +16,7 @@ main {
   flex-wrap: nowrap;
   align-items: center;
 }
-#benvenuto {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,10 +24,40 @@ main {
   align-items: center;
 }
 
-#username{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+
+#oneLine{
+display: flex;
+align-items: center;
 }
+
+.button{
+    height: 31px;
+    width: 120px;
+    background-color: #03A9F4;
+    border: none;
+    border-radius: 9px;
+    font-size: 14px;
+    color: white;
+}
+
+#user{
+    padding: 0 15px 0 15px;
+}
+
+.leftRight{
+    border: none;
+    border-radius: 6px;
+    height: 30px;
+    font-size: 20px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #050505;;
+    height: 40px;
+    width: 300px;
+    padding-bottom: 2px;
+    padding: 8px;
+    font-size: 16px;
+    outline: none; /* Rimuove il contorno di selezione del browser */
+  }

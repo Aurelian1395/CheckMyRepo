@@ -1,8 +1,9 @@
 "use strict";
 
-const change = () => {
-  let docToChange = document.getElementById("benvenuto");
-  let secondDoc = document.getElementById("username");
+const change = (docToChangeId,showElementId) => {
+  let docToChange = document.getElementById(docToChangeId);
+  let showElement = document.getElementById(showElementId);
   docToChange.style.display = "none";
-  secondDoc.style.display = "flex";
+  showElement.style.display = "flex";
+  console.log("ok")
 };

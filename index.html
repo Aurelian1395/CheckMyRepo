@@ -12,18 +12,18 @@
 
 <body>
   <main>
-    <div id="benvenuto">
+    <div id="benvenuto"  class="container"   >
       <h1>Benvenuto</h1>
       <p>Nelle prossime schermate verrà chiesto di inserire username e nome repository del tuo progetto GitHub</p>
-      <button class="button" onclick="change()">Procediamo! &#9755;</button>
+      <button class="button" onclick="change('benvenuto','username')">Procediamo! &#9755;</button>
     </div>
 
-    <div style="display: none;" id="username">
-      <div><button>&#11013;</button>
-        <h1>Username</h1>
-        <button>&#10145;</button>
+    <div id="username" class="container" style="display: none;">
+      <div id="oneLine"><button  class="leftRight" onclick="change('username', 'benvenuto')">&#11013;</button>
+        <h1 id="user">Username</h1>
+        <button class="leftRight">&#10145;</button>
       </div>
-      <div><input type="text" placeholder="Scrivi il tuo username di GitHub"></div>
+      <div><input type="text"  placeholder="Scrivi il tuo username di GitHub" class="insert"></div>
     </div>
   </main>
 </body>
