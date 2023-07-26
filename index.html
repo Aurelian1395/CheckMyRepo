@@ -23,15 +23,16 @@
         <h1 id="user">Username</h1>
         <button class="leftRight" onclick="change('username', 'repository')">&#10145;</button>
       </div>
-      <div><input type="text" placeholder="Scrivi il tuo username di GitHub" class="insert"></div>
+      <div><input type="text" placeholder="Scrivi il tuo username di GitHub" class="insert" id="usernameValue" value="">
+      </div>
     </div>
 
     <div id="repository" class="container" style="display: none;">
       <div class="oneLine"><button class="leftRight" onclick="change('repository', 'username')">&#11013;</button>
         <h1 id="repo">Repository</h1>
-        <button class="leftRight" onclick="change('repository', 'controlPannel')">&#10145;</button>
+        <button class="leftRight" onclick="change('repository', 'controlPannel') , takeValue() ">&#10145;</button>
       </div>
-      <div><input type="text" placeholder="Scrivi il nome del Repository" class="insert"></div>
+      <div><input type="text" placeholder="Scrivi il nome del Repository" class="insert" id="repositoryValue"></div>
     </div>
 
     <div class="container" id="controlPannel" style="display: none;">
@@ -39,9 +40,12 @@
         <h1 id="control">Controllo dei Dati</h1>
       </div>
       <div class="container">
-        <input type="text" value="" placeholder="Username">
-        <input type="text" value="" placeholder="Repository">
-        <button id="send"  onclick="send()">Invia</button>
+
+        <div class="lastDiv" id="divWithData">
+          <p class="fakeInput" id="userValue"></p>
+          <p class="fakeInput" id="repoValue"></span></p>
+        </div>
+        <button id="send">Invia</button>
       </div>
   </main>
 </body>
