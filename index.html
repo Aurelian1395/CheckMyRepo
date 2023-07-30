@@ -30,7 +30,7 @@
     <div id="repository" class="container" style="display: none;">
       <div class="oneLine"><button class="leftRight" onclick="change('repository', 'username')">&#11013;</button>
         <h1 id="repo">Repository</h1>
-        <button class="leftRight" onclick="change('repository', 'controlPannel') , takeValue() ">&#10145;</button>
+        <button class="leftRight" onclick="change('repository', 'controlPannel') , checkGitHub() ">&#10145;</button>
       </div>
       <div><input type="text" placeholder="Scrivi il nome del Repository" class="insert" id="repositoryValue"></div>
     </div>
@@ -45,7 +45,7 @@
           <p class="fakeInput" id="userValue"></p>
           <p class="fakeInput" id="repoValue"></span></p>
         </div>
-        <button id="send">Invia</button>
+        <button id="send" onclick="send()">Invia</button>
       </div>
   </main>
 </body>
